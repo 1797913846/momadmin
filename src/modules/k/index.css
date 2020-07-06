@@ -1,0 +1,54 @@
+.topkbox {
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 140px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.topkbox img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 40px;
+}
+
+.topkbox .topk {
+    float: left;
+}
+
+.topkbox .topk .k1 {
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.topkbox .topk .k2 span {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.kbox {
+    position: absolute;
+    width: 1100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 200px;
+    overflow: hidden;
+}
+
+.leftk {
+    color: #333333;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 81px;
+}
+
+.leftk img {
+    width: 13px;
+}

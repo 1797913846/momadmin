@@ -1,0 +1,40 @@
+.aboutBox {
+    background-color: #EDEDED;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.aboutBox .about {
+    width: 1174px;
+    height:100vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.aboutBox .about img {
+    width: 800px;
+    margin-left: 180px;
+    margin-top: 150px;
+}
+
+.aboutBox .about .abouttext {
+    width: 1000px;
+    margin-left: 90px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom:50px;
+}
+
+.aboutBox .about .abouttext .a1 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.aboutBox .about .abouttext .a2 {
+    margin-bottom: 20px;
+}
+
+.aboutBox .about .abouttext .a3 {}

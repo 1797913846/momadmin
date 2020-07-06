@@ -1,0 +1,54 @@
+.bigMenu {
+    width: 100%;
+    height: 63px;
+    background-color: #303030!important;
+}
+
+.topMenu {
+    width: 1174px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #303030;
+    overflow: hidden;
+}
+
+.ant-menu {
+    background-color: #303030!important;
+    border-bottom: 0px!important;
+}
+
+.ant-menu * {
+    color: #ffffff!important;
+}
+
+.topMenu .menuBox {
+    width: 984px;
+    height: 63px;
+    float: left;
+}
+
+.topMenu .menuBox li {
+    width: 164px;
+    height: 63px;
+    line-height: 63px;
+}
+
+.topMenu .leftLogo {
+    width: 190px;
+    height: 63px;
+    float: left;
+}
+
+.topMenu .leftLogo .logoimg {
+    width: 32px;
+    height: 32px;
+    margin-top: 15.5px;
+    margin-right: 20px;
+}
+
+.topMenu .leftLogo .logoname {
+    width: 51px;
+    height: 20px;
+    margin-top: 21.5px;
+}

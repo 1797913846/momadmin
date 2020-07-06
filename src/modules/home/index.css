@@ -1,0 +1,404 @@
+.usercenter {}
+
+.usercenter .topuser {
+    width: 1188px;
+    height: 109px;
+    background: rgba(246, 246, 246, 1);
+    margin-left: 164px;
+    margin-top: 179px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.usercenter .topuser .u1 {
+    float: left;
+}
+
+.usercenter .topuser .img {
+    width: 40px;
+    margin-top: 27px;
+    margin-left: 49px;
+    margin-right: 27px;
+}
+
+.usercenter .topuser .u1 .t1 {
+    color: #212C32;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+.usercenter .topuser .u1 .t2 {
+    color: rgb(151, 151, 151);
+    font-size: 13px;
+    margin-top: -6px;
+}
+
+.usercenter .topuser .level {
+    width: 68px;
+    height: 18px;
+    background-color: #F05330;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 80px;
+    line-height: 18px;
+}
+
+.usercenter .topuser .level1 {
+    width: 68px;
+    height: 18px;
+    background-color: #5473FF;
+    text-align: center;
+    color: #fff;
+    margin-left: 80px;
+    margin-top: 4px;
+    line-height: 18px;
+}
+
+.usercenter .bottomuser {
+    margin-left: 165px;
+}
+
+.usercenter .bottomuser .userbox {
+    width: 384px;
+    height: 176px;
+    margin-bottom: 20px;
+    border: 1px solid #EDEDED;
+    float: left;
+    margin-right: 18px;
+}
+
+.usercenter .bottomuser .userbox:last-child {
+    margin-right: 0px;
+}
+
+.usercenter .bottomuser .userbox .b1 {
+    color: #212C32;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.usercenter .bottomuser .userbox .b2 {
+    width: 157px;
+    height: 19px;
+    color: #fff;
+    background-color: #5473FF;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 113.5px;
+    margin-top: 18px;
+    margin-bottom: 23px;
+}
+
+.usercenter .bottomuser .userbox .b3 {
+    color: #404040;
+    font-size: 20px;
+    text-align: center;
+    width: 278px;
+    margin-left: 53px;
+    line-height: 20px;
+    border-bottom: 1px solid #EDEDED;
+    padding-bottom: 20px;
+}
+
+.bannerbox {
+    width: 100%;
+    background-image: url(./img/banner.png);
+    height: 618px;
+    overflow: hidden;
+}
+
+.bannerbox .fontStyle {
+    color: #fff;
+    font-size: 52px;
+}
+
+.bannerbox .font1 {
+    margin-top: 186px;
+}
+
+.bannerbox .font3 {
+    font-size: 19px;
+}
+
+.bannerbox .fontbox {
+    width: 1174px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+}
+
+.topTitle {
+    margin-top: 440px;
+    width: 1174px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.topTitle img {
+    margin-left: 75px;
+}
+
+.topTitle span {
+    color: #fff!important;
+    font-size: 20px;
+    margin-left: 11px;
+}
+
+.tcolor {
+    width: 1174px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 46px;
+    z-index: 1000;
+}
+
+.tcolor img {
+    margin-left: 75px;
+}
+
+.tcolor span {
+    color: #333333!important;
+    font-size: 20px;
+    margin-left: 11px;
+}
+
+.jinbox {
+    width: 240px;
+    height: 138px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.jinbox:first-child {
+    margin-left: 100px;
+    background-color: #222222;
+    color: #fff;
+}
+
+.jinbox:last-child {
+    margin-right: 0px;
+}
+
+.jinBbox {
+    width: 1174px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 500px;
+}
+
+.top2 {
+    height: 330px;
+    overflow: hidden;
+}
+
+.timgbox {
+    width: 1174px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 91px;
+    overflow: hidden;
+    margin-left: 60px;
+}
+
+.timg img {
+    width: 220px;
+    height: 252px;
+}
+
+.ant-menu-item {
+    text-align: center;
+}
+
+.ant-menu-horizontal>.ant-menu-item-selected {
+    background-color: #E88A0B;
+    border-bottom: 0px;
+    text-align: center;
+}
+
+.ant-menu-horizontal>.ant-menu-item:hover {
+    border-bottom: 0px;
+    background-color: #E88A0B;
+}
+
+.ttbox {
+    overflow: hidden;
+}
+
+.tableBox1 {
+    width: 1600px;
+    margin-top: 100px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+.paixv {
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 120px;
+    font-size: 18px;
+}
+
+.paixv span {
+    width: 120px;
+    color: #333333;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.paixv .pactive {
+    color: #E88A0B;
+    position: relative;
+}
+
+.paixv .pactive:after {
+    position: absolute;
+    bottom: -10px;
+    width: 56px;
+    left: 30px;
+    right: 20px;
+    height: 2px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #E88A0B;
+}
+
+.topFix {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    /* display: none; */
+}
+
+.topForm {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 101;
+}
+
+.topFTitle {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(145, 145, 145);
+    color: #fff;
+}
+
+.padleft {
+    padding-left: 40px;
+}
+
+.toRight {
+    float: right;
+    width: 70%;
+}
+
+.toRight .ant-btn {
+    float: left;
+}
+
+.toRight .gen {
+    margin-right: 20px;
+}
+
+.closeX {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.leftb {
+    float: left;
+    background-color: rgb(179, 179, 179);
+    width: 200px;
+    height: 100vh;
+}
+
+.leftb .toubox {
+    height: 90px;
+    background-color: rgb(96, 96, 96);
+}
+
+.leftb .toubox * {
+    color: #fff;
+}
+
+.userL {
+    background-color: rgb(215, 215, 215);
+    color: #404040;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+}
+
+.leftb img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 40px;
+}
+
+.leftb .loginout {
+    float: left;
+    margin-top: 20px;
+}
+
+.leftb .loginout .out {
+    cursor: pointer;
+}
+
+.leftr {
+    float: left;
+    height: 100vh;
+    padding-right: 30px;
+    background-color: rgb(215, 215, 215);
+}
+
+.caozuo {
+    float: right;
+}
+
+.caozuo div {
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: rgb(143, 143, 143);
+    color: #fff;
+}
+
+.ant-layout-content {
+    background-color: rgb(215, 215, 215)!important;
+}

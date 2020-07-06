@@ -1,0 +1,81 @@
+.dbox {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dsbox {
+    width: 982px;
+    height: 184px;
+    position: absolute;
+    left: 50%;
+    margin-left: -491px;
+}
+
+.dsbox .dstitle {
+    color: #303030;
+    font-size: 14px;
+    width: 100%;
+    border-bottom: 1px solid #EDEDED;
+    overflow: hidden;
+    padding-bottom: 18px;
+    margin-top: 100px;
+    margin-bottom: 47px;
+}
+
+.dsbox .dstitle span {
+    width: 33.3333333%;
+    display: inline-block;
+    text-align: center;
+}
+
+.dcbox {
+    border: 1px solid #EDEDED;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.dcbox .dd {
+    float: left;
+}
+
+.dcbox .dimg {
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    margin-right: 55px;
+}
+
+.dcbox .d1 {
+    color: #E88A0B;
+    width: 150px;
+    font-size: 14px;
+    margin-top: 85px;
+}
+
+.dcbox .d2 {
+    color: #333333;
+    width: 340px;
+    margin-left: 76px;
+    margin-top: 36px;
+}
+
+.dcbox .d3 {
+    color: #E88A0B;
+    width: 109px;
+    height: 43px;
+    border: 2px solid rgba(237, 237, 237, 1);
+    border-radius: 21px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 43px;
+    text-decoration: underline;
+    margin-top: 70px;
+    margin-left: 100px;
+    cursor: pointer;
+}

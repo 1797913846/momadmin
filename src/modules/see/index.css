@@ -1,0 +1,42 @@
+.seebox {
+    width: 1174px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.textbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textbox .topbox {
+    overflow: hidden;
+}
+
+.textbox .topbox img {
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.textbox .topbox span {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.textbox .bottombox {
+    margin-left: 37px;
+}
+
+.hstitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}

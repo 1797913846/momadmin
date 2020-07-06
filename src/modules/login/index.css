@@ -1,0 +1,170 @@
+.biglogin {
+    width: 1282px;
+    height: 719px;
+    background-image: url(./img/bigbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    overflow: hidden;
+}
+
+.leftLogin {
+    float: left;
+}
+
+.topLogin {
+    height: 546px;
+    margin-left: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+    background-image: url(./img/m1.png);
+    background-repeat: no-repeat;
+    background-size: 369px 546px;
+    background-position: 0px 0px;
+}
+
+.topLogin .t1 {
+    font-size: 46px;
+    color: #5473FF;
+    font-weight: bold;
+    margin-left: 102px;
+    margin-top: 56px;
+}
+
+.topLogin .t1 img {
+    width: 40px;
+    height: 42px;
+    vertical-align: middle;
+}
+
+.topLogin .t2 {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 102px;
+}
+
+.topLogin .t3 {
+    width: 4px;
+    height: 139px;
+    margin-left: 42px;
+}
+
+.bottomLogin {}
+
+.bottomLogin .b1 {
+    margin-left: 80px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.bottomLogin .b1 img {
+    width: 58px;
+    height: 67px;
+    margin-top: -30px;
+}
+
+.bottomLogin .b1 span {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 16px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.bottomLogin .loading {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 80px;
+    width: 350px;
+}
+
+.loginbox {
+    width: 511px;
+    height: 631px;
+    background: rgba(255, 255, 255, 1);
+    margin-top: 46px;
+    margin-right: 89px;
+    float: right;
+}
+
+.loginbox .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-left: 57px;
+    margin-top: 67px;
+}
+
+.loginbox .in1 {
+    height: 49px;
+    line-height: 49px;
+    border: 0px;
+    border-bottom: 1px solid #EDEDED;
+    width: 397px;
+    margin-left: 57px;
+    margin-top: 70px;
+    font-size: 16px;
+    outline: none;
+}
+
+.loginbox .in1:focus {
+    box-shadow: none;
+}
+
+.loginbox .in2 {
+    height: 49px;
+    line-height: 49px;
+    border: 0px;
+    border-bottom: 1px solid #EDEDED;
+    width: 397px;
+    margin-left: 57px;
+    font-size: 16px;
+}
+
+.loginbox .in2 input {
+    font-size: 16px;
+    outline: none;
+}
+
+.loginbox .in2:focus {
+    box-shadow: none;
+}
+
+.ant-input-affix-wrapper:hover {
+    box-shadow: none!important;
+}
+
+.loginbox .mbox {
+    position: relative;
+    margin-left: 58px;
+    margin-top: 43px;
+}
+
+.loginbox .m5 {
+    position: absolute;
+    width: 20px;
+    left: 140px;
+    top: 18px;
+    z-index: 100;
+}
+
+.loginbox .loginButton {
+    width: 397px;
+    height: 57px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 47px;
+    background: rgba(84, 115, 255, 1);
+}
+
+.ant-progress-inner {
+    border-radius: 0px;
+}
+
+.ant-progress-inner .ant-progress-bg {
+    height: 3px!important;
+    border-radius: 0px!important;
+}
