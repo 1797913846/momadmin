@@ -337,14 +337,20 @@
     cursor: pointer;
 }
 
+.leftleftbox {
+    display: flex;
+}
+
 .leftb {
-    float: left;
     background-color: rgb(179, 179, 179);
+    min-width: 200px;
     width: 200px;
     height: 100vh;
+    flex: 1;
 }
 
 .leftb .toubox {
+    width: 100%;
     height: 90px;
     background-color: rgb(96, 96, 96);
 }
@@ -359,6 +365,7 @@
     height: 40px;
     line-height: 40px;
     padding-left: 30px;
+    width: 100%;
 }
 
 .leftb img {
@@ -379,7 +386,7 @@
 }
 
 .leftr {
-    float: left;
+    flex: 1;
     height: 100vh;
     padding-right: 30px;
     background-color: rgb(215, 215, 215);

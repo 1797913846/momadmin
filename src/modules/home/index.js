@@ -15,8 +15,9 @@ import {
     DatePicker,
     InputNumber,
     TreeSelect,
-    Switch,
+    Switch
 } from 'antd';
+
 import b1 from './img/b1.png';
 //redux
 //步骤一
@@ -36,7 +37,7 @@ import tou from './img/tou.png';
 import moment from 'moment';
 //引入数据字典
 import { NAME } from '../../constants/name';
-
+const { Option } = Select;
 class UserCenter extends React.Component {
     constructor(props) {
         super(props);
@@ -64,7 +65,8 @@ class UserCenter extends React.Component {
             showAdd: false,
             uuid: "",
             uuname: "",
-            uusource: ""
+            uusource: "",
+            sourceArray: []
         };
     }
     //请求表格数据的操作
@@ -301,8 +303,10 @@ class UserCenter extends React.Component {
         })
     }
     addU() {
+        let source = JSON.parse(localStorage.getItem('source'));
         this.setState({
-            showAdd: true
+            showAdd: true,
+            sourceArray: source
         })
     }
     addxin() {
@@ -373,6 +377,7 @@ class UserCenter extends React.Component {
         let arr = [];
         selectedRows.map(item => {
             arr.push({
+                // uid: (item.id).slice(0, item.id.length - 1),
                 uid: item.id,
                 source: item.source
             })
@@ -382,6 +387,12 @@ class UserCenter extends React.Component {
             deleteArr: arr
         }, () => {
             console.log('我是数组', this.state.deleteArr);
+        })
+    }
+    handleSelectChange = value => {
+        console.log(value);
+        this.setState({
+            uusource: value
         })
     }
     deleteU() {
@@ -397,7 +408,7 @@ class UserCenter extends React.Component {
         })
     }
     render() {
-        const { rows, total, showDate, trade_date, balance, withdraw, deposit, username, selectedRowKeys, showAdd, uuid, uuname, uusource } = this.state;
+        const { rows, total, showDate, trade_date, balance, withdraw, deposit, username, selectedRowKeys, showAdd, uuid, uuname, uusource, sourceArray } = this.state;
         const columns = this.columns;
         const dateFormat = 'YYYYMMDD';
         console.log('我是时间', trade_date)
@@ -405,12 +416,15 @@ class UserCenter extends React.Component {
             selectedRowKeys,
             onChange: this.onSelectChange
         };
+        let sArray = sourceArray.map(item => (
+            <option value={item.k}>{item.v}</option>
+        ))
         return (
             /**
              * dataSource为数据数组
              * columns为表格的描述配置，列明什么之类的
              */
-            <div>
+            <div className="leftleftbox">
                 <div className="leftb">
                     <div className="toubox">
                         <img src={tou} />
@@ -481,9 +495,18 @@ class UserCenter extends React.Component {
                                     <Form.Item label="用户名称 ">
                                         <Input value={this.state.uuname} onChange={e => this.setState({ uuname: e.target.value })} />
                                     </Form.Item>
-                                    <Form.Item label="数据来源 ">
-                                        <Input value={this.state.uusource} onChange={e => this.setState({ uusource: e.target.value })} />
+                                    <Form.Item name="gender" label="数据来源">
+                                        <Select
+                                            placeholder="请选择数据来源"
+                                            onChange={this.handleSelectChange}
+                                            allowClear
+                                        >
+                                            {sArray}
+                                        </Select>
                                     </Form.Item>
+                                    {/* <Form.Item label="数据来源 ">
+                                        <Input value={this.state.uusource} onChange={e => this.setState({ uusource: e.target.value })} />
+                                    </Form.Item> */}
                                 </div>
                                 <Form.Item className="toRight">
                                     <Button className='gen' onClick={() => this.addxin()}>确认</Button>
@@ -493,7 +516,7 @@ class UserCenter extends React.Component {
                         </div>
                     </div> : ''}
                     <div className="tableBox1">
-                        <Table dataSource={rows} rowKey={record => record.id} rowSelection={rowSelection} columns={columns} size="small" scroll={{ y: 670 }} pagination={false} />
+                        <Table dataSource={rows} rowKey={record => record.id + record.source} rowSelection={rowSelection} columns={columns} size="small" scroll={{ y: 670 }} pagination={false} />
                         <div className="pagen">
                             <Pagination size="small" current={this.state.current} defaultPageSize={12} onChange={this.onChange} total={total} />
                         </div>
