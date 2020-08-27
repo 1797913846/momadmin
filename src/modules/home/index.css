@@ -294,9 +294,8 @@
 
 .topForm {
     width: 400px;
-    height: 300px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    height: 360px;
+    background-color: #434343;
     overflow: hidden;
     position: absolute;
     top: 300px;
@@ -305,22 +304,27 @@
     z-index: 101;
 }
 
+.topForm1 {
+    height: 460px;
+}
+
 .topFTitle {
     width: 100%;
     height: 30px;
     text-align: center;
     line-height: 30px;
-    background-color: rgb(145, 145, 145);
+    background-color: #1B1B1B;
     color: #fff;
 }
 
 .padleft {
     padding-left: 40px;
+    margin-top: 20px;
 }
 
 .toRight {
-    float: right;
     width: 70%;
+    margin-left: 130px;
 }
 
 .toRight .ant-btn {
@@ -329,6 +333,21 @@
 
 .toRight .gen {
     margin-right: 20px;
+    background-color: #3B81AA;
+    color: #fff;
+    border: 0px;
+}
+
+.qv {
+    background-color: #999999;
+    color: #fff;
+    border: 0px;
+}
+
+.qv:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #999999;
 }
 
 .closeX {
@@ -337,22 +356,29 @@
     cursor: pointer;
 }
 
+.light-row {
+    background-color: #5E5E5E;
+}
+
+.dark-row {
+    background-color: #515151;
+}
+
 .leftleftbox {
     display: flex;
 }
 
 .leftb {
-    background-color: rgb(179, 179, 179);
-    min-width: 200px;
+    background-color: #515151;
     width: 200px;
+    min-width: 200px;
     height: 100vh;
-    flex: 1;
 }
 
 .leftb .toubox {
     width: 100%;
     height: 90px;
-    background-color: rgb(96, 96, 96);
+    background-color: #3B81AA;
 }
 
 .leftb .toubox * {
@@ -360,8 +386,7 @@
 }
 
 .userL {
-    background-color: rgb(215, 215, 215);
-    color: #404040;
+    color: #ffffff;
     height: 40px;
     line-height: 40px;
     padding-left: 30px;
@@ -383,29 +408,131 @@
 
 .leftb .loginout .out {
     cursor: pointer;
+    color: #ccc;
 }
 
 .leftr {
     flex: 1;
     height: 100vh;
     padding-right: 30px;
-    background-color: rgb(215, 215, 215);
+    background-color: #434343;
 }
 
 .caozuo {
     float: right;
+    margin-right: 80px;
 }
 
 .caozuo div {
     float: left;
     margin-left: 10px;
     cursor: pointer;
-    padding: 5px;
+    padding: 2px 25px 2px 25px;
     margin-top: 30px;
-    background-color: rgb(143, 143, 143);
+    background-color: #4BAFDB;
     color: #fff;
 }
 
 .ant-layout-content {
     background-color: rgb(215, 215, 215)!important;
 }
+
+.ant-table.ant-table-bordered tbody>tr>td {
+    border-right: 1px solid #434343;
+}
+
+.ant-table tbody>tr>td {
+    border-bottom: 1px solid #434343;
+}
+
+.ant-table tbody>tr.ant-table-row:hover>td {
+    background: none;
+}
+
+.ant-table.ant-table-small thead>tr>th {
+    background-color: #363636;
+}
+
+.ant-table thead>tr>th {
+    color: #ccc;
+}
+
+.ant-table {
+    color: #ccc;
+    line-height: 1;
+    background: #434343;
+}
+
+.ant-table.ant-table-bordered .ant-table-container {
+    border: 1px solid #434343;
+}
+
+.ant-table.ant-table-bordered thead>tr>th {
+    border: 1px solid #434343;
+}
+
+.ant-table thead>tr>th {
+    background: #434343;
+}
+
+.ant-table .ant-table-container::after {
+    background: #434343;
+}
+
+.ant-pagination-item a {
+    color: #ccc;
+}
+
+.ant-pagination-item-active {
+    background: none;
+    color: #4BAFDB;
+    border-color: transparent;
+}
+
+.ant-pagination-item-active {
+    color: #4BAFDB;
+}
+
+.ant-pagination-item-active a {
+    color: #4BAFDB;
+}
+
+.ant-pagination-item-active:hover {
+    border-color: transparent;
+}
+
+.ant-pagination-prev {
+    color: #ccc;
+}
+
+.ant-pagination-prev a {
+    color: #ccc!important;
+}
+
+.ant-pagination-next {
+    color: #ccc;
+}
+
+.ant-pagination-next a {
+    color: #ccc!important;
+}
+
+.ant-pagination {
+    color: #ccc;
+}
+
+.ant-form-item-label>label {
+    color: #ccc;
+}
+
+.ant-checkbox-wrapper {
+    color: #ccc;
+}
+
+.ant-table tbody>tr.ant-table-row-selected>td {
+    background: none;
+}
+
+/* .ant-form-item-label>label::after {
+    margin: 0 18px 0 12px
+} */

@@ -414,6 +414,7 @@ class UserCenter extends React.Component {
         console.log('我是时间', trade_date)
         const rowSelection = {
             selectedRowKeys,
+            columnWidth: '20px',
             onChange: this.onSelectChange
         };
         let sArray = sourceArray.map(item => (
@@ -445,7 +446,7 @@ class UserCenter extends React.Component {
                             <div className="topFTitle">更新数据<span className="closeX" onClick={() => this.qvxiao()}>X</span></div>
                             <Form
                                 labelCol={{
-                                    span: 4,
+                                    span: 6,
                                 }}
                                 wrapperCol={{
                                     span: 14,
@@ -480,7 +481,7 @@ class UserCenter extends React.Component {
                             <div className="topFTitle">添加用户<span className="closeX" onClick={() => this.addxiao()}>X</span></div>
                             <Form
                                 labelCol={{
-                                    span: 4,
+                                    span: 6,
                                 }}
                                 wrapperCol={{
                                     span: 14,
@@ -516,7 +517,11 @@ class UserCenter extends React.Component {
                         </div>
                     </div> : ''}
                     <div className="tableBox1">
-                        <Table dataSource={rows} rowKey={record => record.id + record.source} rowSelection={rowSelection} columns={columns} size="small" scroll={{ y: 670 }} pagination={false} />
+                        <Table dataSource={rows} bordered rowClassName={(record, index) => {
+                            let className = 'light-row';
+                            if (index % 2 === 1) className = 'dark-row';
+                            return className;
+                        }} rowKey={record => record.id + record.source} rowSelection={rowSelection} columns={columns} size="small" scroll={{ y: 670 }} pagination={false} />
                         <div className="pagen">
                             <Pagination size="small" current={this.state.current} defaultPageSize={12} onChange={this.onChange} total={total} />
                         </div>
